@@ -13,10 +13,16 @@
         <!-- Tailwind & Daisy UI CDN -->
         <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
         <script src="https://cdn.tailwindcss.com"></script>
+        <!-- font awesome icon CDN -->
+        <script src="https://kit.fontawesome.com/87a92622d2.js" crossorigin="anonymous"></script>
 
         <style>
             .font-manrope{
                 font-family: "Manrope", sans-serif;
+            }
+
+            .gray-mode{
+                background-color: #f4f4f4;
             }
         </style>
 
@@ -33,10 +39,47 @@
                 }
               }
         </script>
-    <body>
+    <body class="font-manrope gray-mode">
         <!-- header area -->
         <header>
-            
+            <!-- navigation bar -->
+            <nav class="flex justify-between p-4">
+              <!-- logo -->
+              <div class="flex gap-2 items-center">
+                <i class="fa-solid fa-arrow-right bg-lime-300 rounded-full p-2 -rotate-45"></i>
+                <h2 class="text-2xl lg:text-3xl font-extrabold">Rinterio</h2>
+              </div>
+              <!-- main menu -->
+              <div class="hidden lg:flex">
+                <ul class="flex gap-4">
+                  <li><a class="text-base font-extrabold text-black" href="#">Home</a></li>
+                  <li><a class="text-base font-normal text-gray-500" href="#">Service</a></li>
+                  <li><a class="text-base font-normal text-gray-500" href="#">Portfolio</a></li>
+                  <li><a class="text-base font-normal text-gray-500" href="#">Blogs</a></li>
+                  <li><a class="text-base font-normal text-gray-500" href="#">Contact Us</a></li>
+                </ul>
+              </div>
+              <!-- buttons -->
+              <div class="hidden lg:flex"></div>
+              <!-- responsive menu -->
+              <div class="lg:hidden">
+                <div class="dropdown dropdown-end">
+                  <i tabindex="0" class="fa-sharp fa-solid fa-bars scale-100 bg-white rounded-full p-2 button" role="button"></i> 
+                  <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+                    <li><a class="text-sm font-extrabold text-black" href="#">Home</a></li>
+                    <li><a class="text-sm font-normal text-gray-500" href="#">Service</a></li>
+                    <li><a class="sm font-normal text-gray-500" href="#">Portfolio</a></li>
+                    <li><a class="sm font-normal text-gray-500" href="#">Blogs</a></li>
+                    <li><a class="sm font-normal text-gray-500" href="#">Contact Us</a></li>
+                    <li class="text-red-600 text-xs">Note: click outside anywhere to close</li>
+                  </ul>
+                </div>  
+
+              </div>
+            </nav>
+            <!-- banner section -->
+
+        
         </header>
 
         <!-- main area -->
