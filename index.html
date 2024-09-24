@@ -43,15 +43,15 @@
         <!-- header area -->
         <header>
             <!-- navigation bar -->
-            <nav class="flex justify-between p-4">
+            <nav class="flex justify-between lg:justify-around p-4">
               <!-- logo -->
               <div class="flex gap-2 items-center">
                 <i class="fa-solid fa-arrow-right bg-lime-300 rounded-full p-2 -rotate-45"></i>
                 <h2 class="text-2xl lg:text-3xl font-extrabold">Rinterio</h2>
               </div>
               <!-- main menu -->
-              <div class="hidden lg:flex">
-                <ul class="flex gap-4">
+              <div class="hidden lg:flex lg:items-center">
+                <ul class="flex gap-8">
                   <li><a class="text-base font-extrabold text-black" href="#">Home</a></li>
                   <li><a class="text-base font-normal text-gray-500" href="#">Service</a></li>
                   <li><a class="text-base font-normal text-gray-500" href="#">Portfolio</a></li>
@@ -60,7 +60,13 @@
                 </ul>
               </div>
               <!-- buttons -->
-              <div class="hidden lg:flex"></div>
+              <div class="hidden lg:flex lg:gap-4 lg:items-center">
+                <i class="fa-solid fa-magnifying-glass bg-white rounded-full p-4"></i>
+                <i class="fa-solid fa-cart-shopping bg-white rounded-full p-4"></i>
+                <button class="btn bg-lime-400 rounded-full font-extrabold">Book Consult
+                  <i class="fa-solid fa-arrow-right bg-black text-white rounded-full p-2 -rotate-45"></i>
+                </button>
+              </div>
               <!-- responsive menu -->
               <div class="lg:hidden">
                 <div class="dropdown dropdown-end">
